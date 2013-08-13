@@ -13,10 +13,7 @@
       </div>
     <% end %>
     
-    <div class="<%= content.has_image? ? "content-right" : "content-main" %>">
-      <% unless content.hide_title? %>
-        <h1 class="title"><%= content.title %></h1>
-      <% end %>
+    <div class="<%= content.has_image? ? "content-right" : "content-main" %>">      
       
       <%= content.rendered_body %>
       
